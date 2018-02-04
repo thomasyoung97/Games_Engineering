@@ -1,7 +1,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "ship.h"
+#include "Ship.h"
+
 
 using namespace sf;
 using namespace std;
@@ -12,6 +13,7 @@ Sprite invader;
 const int gameWidth = 800;
 const int gameHeight = 600;
 
+std::vector<Ship *> ships;
 
 void load()
 {
